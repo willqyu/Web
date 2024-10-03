@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Will Yu</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&family=Roboto+Slab&family=Space+Mono:wght@400;700&family=Tilt+Neon&display=swap" rel="stylesheet">
+		
+		<script src="https://kit.fontawesome.com/bb16a99e54.js" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/header.css">
+		<link rel="stylesheet" href="styles/entry.css">
+		<link rel="stylesheet" href="styles/content.css">
+
+	</head>
+	<body>
+		<div id="content"> 
+			<section id="home-page">
+				<div id="loading-bar">
+					<div id="bar">
+					</div>
+					L O A D I N G ...
+				</div>
+				<div id="header">
+					<p id="header-name">
+						<span id="name" class="hacker-text" data-text="WILLIAM YU" data-progress="0"></span><span class="floating-underscore">_</span>
+					</p>
+					
+					<div id="main-menu">
+						<div class="main-menu-item" data-header="1">
+							<div class="main-menu-mask"></div>
+							<p class="main-menu-text">BIO</p>
+						</div>
+						<div class="main-menu-item" data-header="2">
+							<div class="main-menu-mask"></div>
+							<p class="main-menu-text">EXPERIENCE</p>
+						</div>
+						<div class="main-menu-item" data-header="2">
+							<div class="main-menu-mask"></div>
+							<p class="main-menu-text">PROJECTS</p>
+						</div>
+						<div class="main-menu-item" data-header="2">
+							<div class="main-menu-mask"></div>
+							<p class="main-menu-text">HIGHLIGHTS</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="watermark">
+					<div id="watermark-content">
+						<div id="watermark-links">
+							<a class="watermark-link" href="https://www.linkedin.com/in/williamqyu" target="_blank">LINKEDIN</a>
+						<span id="watermark-sep">|</span>
+						<a class="watermark-link" href="https://github.com/willqyu" target="_blank">GITHUB</a>
+						</div>
+						
+						<p id="watermark-text">ALL RIGHTS RESERVED WILLIAM YU - 2024</p>
+					</div>
+				</div>
+	
+			</section>	
+	
+			<section id="bio">
+				<div id="bio-banner">
+					<div id="bio-image">
+						<img src="/assets/resultbw.png"/>
+					</div>
+					<p>-> 
+						<span style="font-weight: bold;">
+							<span id="changing-bio"></span><span class="floating-underscore">_</span>
+						</span>
+					</p>
+				</div>
+				<div id="bio-text">
+					<h1>Welcome</h1>
+					<p>
+						I'm Will. I graduated as a manufacturing engineer from the University of Cambridge in 2024. 
+						I'm currently a founding engineer at <b>Cambridge Aerospace,</b>
+						which acquired my previous startup <a target="_blank" href="https://www.caladan.industries/">Caladan Industries</a>.
+						I like building rockets and robots.
+					</p>
+					<br>
+					<p>
+						I have experience in full-stack software engineering, embedded electronics, and mechanical design.
+					</p><br>
+
+					<a id="bio-contact" target="_blank" href="https://www.linkedin.com/in/williamqyu">-> Get in Touch</a>
+				</div>
+			</section>
+
+			<section id="experience">
+				<div id="experience-title">
+					<h1>EXPERIENCE</h1>
+				</div>
+				<div id="experience-list">
+					<div id="experience-left">
+						<a class="job" target="_blank" href="">
+							<h1>Cambridge Aerospace</h1>
+							<p class="job-title">Founding Engineer, Present</p>
+							<p class="job-desc">
+								Building the next UK Defence Prime
+							</p>
+						</a>
+						<a class="job" target="_blank" href="https://www.caladan.industries/">
+							<h1>Caladan Industries</h1>
+							<p class="job-title">CTO & Founder, 2024</p>
+							<p class="job-desc">
+								Building ultralow-cost jet engines for drone interception (Acquired)
+							</p>
+						</a>
+						<a class="job" target="_blank" href="https://www.blackrock.com/">
+							<h1>BlackRock</h1>
+							<p class="job-title">Portfolio Manager Intern, 2024</p>
+							<p class="job-desc">
+								Delivered automated tooling for modelling repos across 650+ portfolios
+								and £227 billion AUM, saving hours of manpower per day</p>
+						</a>
+					</div>
+	
+					<div id="experience-right">
+						<a class="job" target="_blank" href="https://www.cusf.co.uk/">
+							<h1>CU Spaceflight</h1>
+							<p class="job-title">President, 2024</p>
+							<p class="job-desc">
+								Leading student engineering teams to build rockets, balloons, and more.
+								Raised £10k+ in sponsorship and delivered talks
+							</p>
+						</a>
+						<a class="job" target="_blank" href="https://www.rothesay.com/">
+							<h1>Rothesay</h1>
+							<p class="job-title">Quant Strategist Intern, 2023</p>
+							<p class="job-desc">
+								Automating SolvencyII calculations across £60bn+ of assets for risk management
+							</p>
+						</a>
+						<a class="job" target="_blank" href="https://www.huawei.com/">
+							<h1>Huawei</h1>
+							<p class="job-title">CPU Architect Intern, 2022</p>
+							<p class="job-desc">
+								Redesigning CPU simulator using dynamic binary translation
+							</p>
+						</a>
+						<div class="job">
+							<p>... and others</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+
+        <script src="https://unpkg.com/xstate@4/dist/xstate.js"></script>
+		<script src="js/three.js"></script>
+        <script src="js/anime.min.js"></script>
+		<script src="js/animations.js"></script>
+		<script src="js/three/scene.js"></script>
+		<script src="js/three/space.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

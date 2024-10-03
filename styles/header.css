@@ -1,0 +1,82 @@
+
+#header {
+    width: 100%;
+    position: absolute;
+    margin-left: 3vw;
+    opacity: 0;
+}
+
+#header-name {
+    font-size: max(5vw, 6vh);
+    font-weight: 700;
+    letter-spacing: 0.3vw;
+    margin: 50px 0;
+    margin-bottom: 5vh;
+    padding: 15px 0.5em;
+    width: 60vw;
+    height: 10%;
+    border-bottom: 1.2vw solid white;
+    border-left: 1.2vw solid white;
+    border-width: 0;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 120%;
+}
+
+.hacker-text {
+    color: white;
+    opacity: 1;
+}
+
+#main-menu {
+    border-left: 1.2vw solid white;
+    border-width: 0;
+    width: 35vw;
+    /* padding-top: 3vw; */
+}
+
+.main-menu-item {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 5vh;
+    line-height: 10vh;
+    height: 10vh;
+    min-height: 100%;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+
+    display: none;
+}
+
+.main-menu-text {
+    margin: 0 2vw;
+    padding: 1px 0;
+    font-weight: bold;
+    position: absolute;
+    z-index: 10;
+}
+
+.main-menu-mask {
+    width: 25vw;
+    height: 0;
+    position: absolute;
+    /* border: 10px white solid; */
+    background-color: white;
+    mix-blend-mode: difference;
+    transition: height 0.3s;
+}
+
+.main-menu-item:hover {
+    cursor: pointer;
+}
+
+.main-menu-item:hover .main-menu-mask {
+    height: 10vh;
+    transition: height 0.3s;
+}
+
+.main-menu-item:hover .main-menu-text {
+    color:black;
+    transition: color 0.7s;
+}
+
